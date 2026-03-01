@@ -1,6 +1,6 @@
 import Form from "./Form";
 import MemoryCard from "./MemoryCard";
-import OpenFormButton from "./openFormButton";
+import OpenFormButton from "./OpenFormButton";
 import JournalSetup from "./JournalSetup";
 import Logo from "./assets/logo.png";
 import { useState } from "react";
@@ -34,7 +34,7 @@ export default function Home({ mode }) {
   const sortedYears = uniqueYears.sort((a, b) => b - a); //sorts it from highest year to lowest
   const [isExiting, setIsExiting] = useState(false); //this is to trigger the exit animation on the splash screen, we will pass this state to the splash screen and then when the user clicks on the button to enter the app, we will set this state to true and then after a delay of 1 second, we will set the showSplash state to false to hide the splash screen and show the home screen, we use a timeout to delay the hiding of the splash screen so the user can see the exit animation before it disappears
   const [splash, showSplash] = useState(true); //this is to show the splash screen when the user first opens the app, it will be true and then after 3 seconds it will be set to false and the splash screen will be hidden and the home screen will be shown, we use a timeout to delay the hiding of the splash screen so the user can see it for a few seconds before it disappears
-  const [buttonIndex, setButtonIndex] = useState(0); //this is to keep track of the index of the button that is active, so we can change the style of the button when it is active, we will pass this state to the yearbar and then we will compare it with the index of the button in the yearbar and if it is the same, we will change the style of the button to show that it is active
+  const [buttonIndex, setButtonIndex] = useState(0); //this is to keep track off the index of the button that is active, so we can change the style of the button when it is active, we will pass this state to the yearbar and then we will compare it with the index of the button in the yearbar and if it is the same, we will change the style of the button to show that it is active
   const [showModal, setShowModal] = useState(false); //this state is to show the modal when the user clicks on the view more button, otherwise it will be hidden, when the user clicks on the view more button, the modal will be shown and when the user clicks on the close button, the modal will be hidden again
   const [showEditForm, setEditForm] = useState(false); //this state is to show the edit form when the user clicks on the edit note button, otherwise it will be hidden and only the note will be shown, when the user clicks on edit note, the form will be shown and the note will be hidden, when the user submits the form, the note will be updated and the form will be hidden again
   const [editNote, setEditNote] = useState(true); //this state is to show the edit button only when the user clicks on it, otherwise it will be hidden and only the note will be shown, when the user clicks on edit note, the form will be shown and the note will be hidden, when the user submits the form, the note will be updated and the form will be hidden again
