@@ -1,13 +1,13 @@
 import Form from "./Form";
 import MemoryCard from "./MemoryCard";
 import OpenFormButton from "./OpenFormButton";
+import SlideshowOverlay from "./SlideshowOverlay";
 import JournalSetup from "./JournalSetup";
 import Logo from "./assets/logo.png";
 import { useState } from "react";
 import { useEffect } from "react";
 import Yearbar from "./Yearbar";
 import Splashscreen from "./Splashscreen";
-import Modal from "./ModAL";
 import { signOut } from "firebase/auth";
 import { auth } from "./firebase";
 import { useAuth } from "./AuthContext";
@@ -602,7 +602,7 @@ export default function Home({ mode }) {
       }}
     >
       {showModal && (
-        <Modal
+        <SlideshowOverlay
           activeMedia={activeMedia}
           activeIndex={activeIndex}
           setactiveIndex={setactiveIndex}

@@ -1,7 +1,7 @@
 import Love from "./assets/love.png";
 import { useEffect } from "react";
 import videoThumbnail from "./assets/thumbnail.avif";
-export default function Modal({
+export default function SlideshowOverlay({
   closeModal,
   activeIndex,
   activeMedia,
