@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import Logo from './assets/whitelogo.gif'
+import Logo from './assets/Whitelogo.gif'
 export default function Splashscreen({setIsExiting,isExiting, showSplash}){
     useEffect(()=>{
         const exit = setTimeout(()=>{
