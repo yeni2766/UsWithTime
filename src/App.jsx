@@ -7,12 +7,14 @@ import Landing from './Landing';
 import Login from './Login';
 import ProtectedRoute from './ProtectedRoute';
 import Signup from './Signup';
+import NotFound from './NotFound';
 
 function App() {
 
   return (
     <Routes>
       <Route path = '/login' element={<Login/>}/>
+      <Route path = '*' element={<NotFound/>}/>
       <Route path = '/signup' element={<Signup/>}/>
       <Route path = '/' element={<Landing/>}/>
       {/*This is for the app to recognise its a demo so the storage type can switch */}
