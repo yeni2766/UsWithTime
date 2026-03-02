@@ -137,11 +137,16 @@ export default function Login() {
             Login
           </button>
         </form>
-        <div className="flex flex-col justify-center items-center w-full">
-          <ul>
+        <div className="w-full">
+          <ul className="flex flex-col justify-center items-center ">
             <Link to="/signup">
               <li className="font-display font-bold">
                 New here? Create your journal 💕
+              </li>
+            </Link>
+             <Link to="/demo">
+              <li className="font-display font-bold">
+                Try our demo
               </li>
             </Link>
           </ul>

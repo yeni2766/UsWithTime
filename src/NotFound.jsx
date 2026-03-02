@@ -24,7 +24,7 @@ export default function NotFound() {
         <h1 className="text-4xl font-bold mb-4">404 💔</h1>
 
         <p className="mb-6 text-lg">
-          This page wandered off our love timeline...
+          This page doesn't exist
         </p>
 
         <Link
