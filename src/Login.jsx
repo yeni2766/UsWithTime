@@ -138,14 +138,14 @@ export default function Login() {
           </button>
         </form>
         <div className="w-full">
-          <ul className="flex flex-col justify-center items-center ">
+          <ul className="flex flex-col justify-center items-center">
             <Link to="/signup">
               <li className="font-display font-bold">
                 New here? Create your journal 💕
               </li>
             </Link>
              <Link to="/demo">
-              <li className="font-display font-bold">
+              <li className="font-display font-bold py-4">
                 Try our demo
               </li>
             </Link>
