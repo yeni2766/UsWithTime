@@ -37,6 +37,8 @@ export default function Form({
   // { URL: "imag" },
   // { URL: "image2" }
   //]
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
 
   useEffect(() => {
     // If the user hasn’t selected any files yet
@@ -123,6 +125,8 @@ export default function Form({
   const handleForm = async (e) => {
     e.preventDefault();
 
+    setIsSubmitting(true);
+    try{
     const id =
       window.crypto?.randomUUID?.() ??
       `${Date.now()}-${Math.random().toString(16).slice(2)}`;
@@ -192,7 +196,16 @@ export default function Form({
     setMedia([]);
     setPreparedMedia([]);
     setIsOpen(false);
-  };
+
+    } catch (error) {
+      console.error("Error creating memory:", error);
+      alert("Something went wrong while creating the memory.");
+
+    }finally {
+    // ALWAYS stop loading even if something fails
+      setIsSubmitting(false);
+    }
+  }
   return (
     <section
       className={`flex flex-col justify-content items-center fixed bottom-0 w-full ${
@@ -288,10 +301,11 @@ export default function Form({
         </div>
         <button
           type="submit"
+          disabled={isSubmitting}
           className="w-full p-4 px-6 py-2 font-display text-lg bg-[#ffb6d9] text-white border-2 border-black rounded-2xl cursor-pointer"
           aria-label="Add Memory"
         >
-          Add Memory
+           {isSubmitting ? "Adding memory..." : "Add Memory"}
         </button>
       </form>
     </section>
