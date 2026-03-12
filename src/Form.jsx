@@ -267,10 +267,45 @@ export default function Form({
             <option value="" disabled>
               Select a mood
             </option>
-            <option value="🥰">🥰</option>
-            <option value="😠">😠</option>
-            <option value="💩">💩</option>
-            <option value="😋">😋</option>
+              <option value="🥰">🥰</option>
+              <option value="😍">😍</option>
+              <option value="😘">😘</option>
+              <option value="❤️">❤️</option>
+              <option value="💖">💖</option>
+              <option value="💘">💘</option>
+              <option value="💞">💞</option>
+              <option value="💕">💕</option>
+              <option value="💓">💓</option>
+              <option value="😊">😊</option>
+              <option value="😄">😄</option>
+              <option value="😁">😁</option>
+              <option value="😆">😆</option>
+              <option value="😂">😂</option>
+              <option value="🤣">🤣</option>
+              <option value="🙂">🙂</option>
+              <option value="😉">😉</option>
+              <option value="😋">😋</option>
+              <option value="🤗">🤗</option>
+              <option value="🫶">🫶</option>
+              <option value="🥹">🥹</option>
+              <option value="😇">😇</option>
+              <option value="🥳">🥳</option>
+              <option value="😌">😌</option>
+              <option value="😴">😴</option>
+              <option value="🫠">🫠</option>
+              <option value="😎">😎</option>
+              <option value="😢">😢</option>
+              <option value="😭">😭</option>
+              <option value="🥺">🥺</option>
+              <option value="😠">😠</option>
+              <option value="😡">😡</option>
+              <option value="🤬">🤬</option>
+              <option value="🤪">🤪</option>
+              <option value="😜">😜</option>
+              <option value="😝">😝</option>
+              <option value="🤭">🤭</option>
+              <option value="😏">😏</option>
+              <option value="💩">💩</option>
             {/*this will be the emojis the user can select for the mood*/}
           </select>
         </div>
