@@ -1,3 +1,5 @@
+<img width="100%"  alt="uswithtime" src="https://github.com/user-attachments/assets/5633d69c-84a3-4f10-b911-e0c54620cc6d" />
+
 # Us With Time
 
 A modern, romantic timeline-based memory journal built with React and Tailwind CSS, designed to capture and revisit meaningful moments in a beautifully structured, mobile-first experience.
